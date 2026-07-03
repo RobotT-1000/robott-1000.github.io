@@ -4,4 +4,4 @@ Cloud security / IAM analyst projects collection
 
 Project 1
 
-- [Entra ID IAM governance](projects/entra-id-iam-governance.md)
+- [Entra ID IAM governance](project002/IAM-governance.md)
