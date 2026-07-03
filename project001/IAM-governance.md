@@ -32,7 +32,10 @@ The core design principle: **credentials should be short-lived, and privilege sh
 
 ## Architecture
 
-```mermaid
+<pre class="mermaid">
+flowchart TB
+...
+</pre>
 flowchart TB
     subgraph Sources["Identity Sources"]
         A1["Human Identities<br/>(Entra ID Users/Groups)"]
