@@ -8,4 +8,4 @@ project 1
 
 Project 2
 
-- [Azure cloud auto-configuration and misconfiguration Hunting]()
+- [Azure cloud auto-configuration and misconfiguration Hunting](project002/az-conf-IaC.md)
