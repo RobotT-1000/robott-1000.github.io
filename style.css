@@ -154,6 +154,21 @@ h1, h2, h3 {
   background: var(--surface-tint);
   color: var(--azure);
 }
+.badge.pending {
+  border-style: dashed;
+  border-color: var(--line-strong);
+  background: var(--surface);
+  color: var(--ink-faint);
+}
+.badge.pending::before {
+  content: "○";
+  font-weight: 700;
+}
+
+/* Fix: sticky nav (64px) was covering anchor targets on jump-to-section */
+[id] {
+  scroll-margin-top: 88px;
+}
 
 /* CTA row */
 .cta-row { display: flex; gap: 14px; margin-top: 36px; flex-wrap: wrap; }
