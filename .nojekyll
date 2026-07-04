@@ -1,0 +1,61 @@
+/* Custom Style tailored for Hanqin's Infrastructure & Cloud Security Portfolio */
+
+:root {
+    --theme-color: #0078D4; /* Azure Blue */
+    --text-color-main: #323130; /* 微软官方深灰文本色 */
+    --bg-light: #F3F2F1; /* 官方背景冷灰 */
+}
+
+/* 全局基调 */
+body {
+    background-color: var(--bg-light);
+    color: var(--text-color-main);
+    line-height: 1.6;
+}
+
+/* H1 大标题 - 采用深邃安全蓝，确立技术权威感 */
+h1 {
+    color: #002050;
+    font-weight: 600;
+    border-bottom: 2px solid #0078D4;
+    padding-bottom: 8px;
+}
+
+/* H2/H3 副标题 */
+h2, h3 {
+    color: #111c24;
+    font-weight: 500;
+}
+
+/* 带有 Azure Cloud Portal 质感的高级卡片式代码块 */
+pre, code {
+    background-color: #ffffff !important;
+    border: 1px solid #e1dfdd;
+    border-left: 4px solid #0078D4 !important; /* 经典 Azure 蓝色左侧边条 */
+    border-radius: 2px; /* 微软偏爱硬朗的微圆角，而非大圆角 */
+    box-shadow: 0 1.6px 3.6px 0 rgba(0,0,0,0.132), 0 0.3px 0.9px 0 rgba(0,0,0,0.108); /* Fluent Design 轻量立体阴影 */
+}
+
+/* 强调说明块（Blockquote） - 模拟 Azure 官方文档的 "Note/Important" 警告框 */
+blockquote {
+    background-color: #eff6fc; /* 浅蓝底色 */
+    border-left: 4px solid #0078D4; /* 蓝色左边线 */
+    color: #004578;
+    padding: 16px;
+    margin: 20px 0;
+    border-radius: 0 2px 2px 0;
+}
+
+/* 针对安全通过的基线高亮样式 */
+.security-pass {
+    background-color: #dff6dd;
+    border-left: 4px solid #107c41;
+    color: #107c41;
+}
+
+/* 针对安全漏洞拦截的样式 */
+.security-fail {
+    background-color: #fde7e9;
+    border-left: 4px solid #a80000;
+    color: #a80000;
+}
