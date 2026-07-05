@@ -225,6 +225,10 @@ h1, h2, h3 {
   white-space: nowrap;
   font-weight: 600;
 }
+.status-pill.in-progress {
+  background: #FFF3E0;
+  color: #B45309;
+}
 .project-card p { color: var(--ink-soft); font-size: 15px; margin: 0 0 16px; }
 .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
 .tag {
@@ -312,6 +316,32 @@ h1, h2, h3 {
 }
 .related-box p { margin: 0; color: var(--ink-soft); font-size: 14.5px; }
 .related-box a { font-weight: 600; }
+
+.progress-banner {
+  background: #FFF3E0;
+  border: 1px solid #FFD9A0;
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.progress-banner .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #B45309;
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+.progress-banner p {
+  margin: 0;
+  font-size: 14.5px;
+  color: #92400E;
+  line-height: 1.55;
+}
+.progress-banner strong { color: #78350F; }
 
 @media (max-width: 640px) {
   .hero { padding: 64px 0 48px; }
