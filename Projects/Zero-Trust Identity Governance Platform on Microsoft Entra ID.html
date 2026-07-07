@@ -261,12 +261,8 @@ flowchart LR
       </pre>
     </div>
     <ul class="decision-list">
-      <li><strong>Joiner</strong>
-        <span>New user automatically added to the correct department group on hire date. Discovered the default template's "send welcome email" task fails silently for test accounts missing a <code>mail</code> attribute — removed the task rather than mask the failure with a fake mailbox, and verified group assignment succeeded independently.</span></li>
-      <li><strong>Mover</strong>
-        <span>Department attribute change automatically removes the user from their old department's group and adds them to the new one — closing the most common real-world source of privilege creep, where employees accumulate access across role changes because nothing ever un-assigns the old permissions.</span></li>
-      <li><strong>Leaver</strong>
-        <span>Account disabled, refresh tokens revoked, and group memberships stripped on the configured leave date. The default template included a permanent account-deletion task; running it at <code>Days from event: 0</code> deleted the test account outright. Caught via the Entra ID soft-delete restore window, then removed the deletion task — disable-and-revoke should happen immediately, permanent deletion should be a separate, later-stage decision.</span></li>
+      <li><strong>JML Lifecycle Automation</strong>
+        <span>full Joiner-Mover-Leaver automation Most implementations only automate offboarding. Access sprawl from role changes is at least as common a risk, so all three stages were built and tested.</span></li>
     </ul>
   </div>
 </section>
